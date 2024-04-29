@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- fontawesome cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- custom css -->
+  <link rel="stylesheet" href="style.css">
+  <!-- bootstrap css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <title id="title">YoiJobs</title>
+</head>
+
+<body>
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+    <div class="container-fluid  mx-4">
+      <a class="navbar-brand brand fs-3 fw-bold" id="title" href="#">YoiJobs</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" id="menu1" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " id="menu2" href="#about-japan">About Japan</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " id="menu3" href="#job-listing">Job Listing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " id="menu4" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " id="menu5" href="#contact">Contact</a>
+          </li>
+        </ul>
+        <div class="d-flex justify-content-start justify-content-lg-between flex-wrap g-5 align-items-center">
+          <div class="language-switcher me-5">
+            <select id="language-selector">
+              <option value="en" data-icon="🇺🇸">En</option>
+              <option value="jp" data-icon="JP">Jp</option>
+            </select>
+          </div>
+          <div>
+            <button class="btn-reg" id="btn-reg">Register</button>
+            <button class="btn-login mx-2" id="btn-login">LogIn</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+
+  <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./images/photo1.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./images/photo2.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./images/photo3.jpeg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+  </div>
+  <div class="main">
+    <div class="container ">
+      <div class="row">
+        <div class="col-12">
+          <h1 class="main-heading" id="main-heading">Discover Work in Japan</h1>
+          <h3 class="sub-heading" id="sub-heading">Explore top job opportunities across various sectors in Japan.<br>
+            Find your dream career with ease.</h3>
+          <div class="d-flex justify-content-lg-start justify-content-center  align-items-center g-5">
+            <button class="home-btn" id="home-btn-1">Find Job</button>
+            <button class="home-btn btn-contact ms-3" id="home-btn-2">Contact</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--  intro -->
+  <section class="intro">
+    <div class="container my-3">
+      <div class="row d-flex justify-content-lg-start justify-content-center align-items-center g-5 flex-lg-wrap">
+        <div class="intro-left  col-lg-7">
+          <h2 class="text-left" id="intro-heading">Unlock Work Opportunities in Japan with YoiJobs</h2>
+          <p class=" text-left" id="intro-subtext">Whether you're a seasoned professional looking for
+            new career prospects or a
+            recent graduate eager to explore international work experiences, YoiJobs offers a wealth of opportunities
+            waiting to be discovered. We specialize in connecting talented individuals with top companies in Japan.
+            Explore our curated list of featured job listings and take the next step in your career journey with YoiJobs
+            today.</p>
+          <button class="btn btn-warning text-light rounded-pill" id="intro-btn">Find Job</button>
+        </div>
+        <div class="intro-right col-lg-5">
+          <img src="./images/photo6.jpeg" class="img-fluid" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- about japan -->
+  <div id="about-japan" class="wrapper-outer">
+    <div class="container-fluid wrapper">
+      <div class="row parallax_section">
+        <div class="parallax_bg">
+          <div class="section-heading mt-5 mb-3">
+            <h2 class="aboutHeading text-center">About Japan</h2>
+          </div>
+          <div class="about-jp-content text-center">
+            <p class="p-jp1">Discover the rich culture, fascinating traditions, and unique lifestyle of Japan. From the graceful art
+              of tea ceremonies to the vibrant colors of traditional festivals, Japan's culture is a tapestry of
+              heritage and innovation.</p>
+            <p class="p-jp2">From the bustling streets of Tokyo to the serene landscapes of Kyoto, Japan offers a captivating blend of
+              modernity and tradition. Experience the electric energy of Shibuya Crossing or wander through the historic
+              districts of Kyoto, where ancient temples stand in harmony with modern architecture.</p>
+            <p class="p-jp3">Immerse yourself in Japanese culture, explore ancient temples, indulge in delicious cuisine, and
+              experience the warmth of Japanese hospitality. Whether you're savoring sushi at a local izakaya or joining
+              a traditional tea ceremony, Japan's hospitality will leave a lasting impression.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- job listing -->
+  <section id="job-listing" class="job-listing">
+    <div class="container">
+      <div class="row">
+        <div class="section-heading mb-5">
+          <h2 class="text-center" id="listing-section">Job Openings</h2>
+        </div>
+      </div>
+      <div class="categories">
+        <!-- categories -->
+      </div>
+    </div>
+    <div class="job-list my-5" id="job-cards-container">
+      <!-- List of jobs -->
+      
+    </div>
+    <nav aria-label="Page navigation example">
+      <ul class="pagination justify-content-center" id="pagination">
+        <!-- Pagination links will be dynamically added here -->
+      </ul>
+    </nav>
+    </div>
+  </section>
+
+
+  <section id="about" class="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="section-heading text-center">
+            <h2 id="about-header">About YoiJobs</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row about-main justify-content-center align-items-center g-5 flex-lg-wrap">
+        <div class="col-lg-4 about-left">
+          <img src="./images/building.jpg" class="img-fluid" alt="Image by fanjianhua">
+        </div>
+        <div class="col-12 col-lg-7 about-right">
+          <p id="about-content-1">Welcome to YoiJobs, your gateway to work opportunities in Japan. Based in Tokyo, we
+            specialize in connecting talented individuals with exciting career prospects in one of the world's most
+            dynamic and innovative countries - Japan.</p>
+          <p id="about-content-2">With our extensive network and expertise, we are dedicated to helping you navigate the
+            Japanese job market and find the perfect opportunity to further your career. Join us on this exciting
+            journey!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- contact -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="row">
+        <div class="section-heading">
+          <h2 class="text-center" id="contact-header">Contact Us</h2>
+        </div>
+        <p class="text-center mt-3" id="contact-content"> Send us a message and we'll get back to you as soon as we can
+        </p>
+        <form>
+          <div class="mb-3">
+            <label for="name" class="form-label" id="contact-form-name">Name</label>
+            <input type="text" class="form-control" id="name">
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label" id="contact-form-email">Email address</label>
+            <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label contact-form-message">Message</label>
+            <textarea class="form-control" class="contact-form-message" rows="5"></textarea>
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          </div>
+          <button type="submit" id="submit-btn" class="home-btn">Submit</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container-fluid">
+      <div class="row d-flex justify-content-between align-items-center flex-md-wrap">
+        <div class="footer-main pt-4 px-5">
+          <div class="col-md-4">
+            <div class="logo brand" id="title">
+              YoiJobs
+            </div>
+            <p class="social ps-3" id="Social-Heading">Connect with us</p>
+            <div class="icons ps-3 d-flex">
+              <div class="icon me-3"><i class="fa-brands fa-square-facebook"></i></div>
+              <div class="icon me-3"><i class="fa-brands fa-square-twitter"></i></div>
+              <div class="icon me-3"><i class="fa-brands fa-square-instagram"></i></div>
+              <div class="icon me-3"><i class="fa-brands fa-linkedin"></i></div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <!-- Add content for the second column here if needed -->
+          </div>
+        </div>
+        <div class="col-12 credits">
+          <p class="text-center credits pt-2" id="footer-credits">Developed By Meghana Bait</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- bootstrap js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/21.6.3/i18next.min.js"></script>
+
+  <script src="./scripts/data.js"></script>
+  <script src="./scripts/translate.js"></script>
+  <script src="./scripts/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,535 @@
+/* Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Comfortaa", sans-serif;
+    /* Font stack with backup */
+}
+
+*,
+*:after,
+*:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: #FFC107;
+    --sec-color: #2980b9;
+    --red: red;
+    --grey: #888;
+    --black: #222;
+    --dark-grey: #555;
+    --light-grey: #d1d1d1;
+    --white: #eee;
+    --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .1);
+    --border: .1rem solid rgba(0, 0, 0, .2);
+}
+
+*::section {
+    background-color: var(--main-color);
+    color: var(--white);
+}
+
+::-webkit-scrollbar {
+    width: 1rem;
+    height: .5rem;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--sec-color);
+}
+
+html {
+    /* font-size: 62.5%; */
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--white);
+}
+
+section, .about-jp-content {
+    padding: 2rem;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+
+/* Navbar Styles */
+.navbar {
+    background-color: var(--main-color);
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.brand {
+    font-size: 3rem;
+}
+
+.nav-item {
+    font-weight: 700;
+    padding-left: 2rem;
+}
+
+
+.language-switcher select {
+    padding: 8px 30px 8px 10px;
+    /* Adjust padding as needed */
+    border: 1px solid transparent;
+    border-radius: 5px;
+    font-size: 16px;
+    appearance: none;
+    background-color: transparent;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg width="16" height="16" xmlns="http://www.w3.org/2000/svg"><polygon points="0,0 16,0 8,10" fill="%23000"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px top 60%;
+    background-size: 12px;
+}
+
+/* Adjust flag icon position */
+.language-switcher select option {
+    padding-left: 30px;
+}
+
+
+/* Button Styles */
+.btn-reg,
+.btn-login,
+.home-btn,
+.apply-btn {
+    padding: .3rem 2rem;
+    font-size: small;
+    outline: none;
+    border: none;
+    color: white;
+    background-color: var(--main-color);
+    cursor: pointer;
+    transition: all 0.4s;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.btn-reg {
+    background-color: var(--sec-color);
+}
+
+.btn-reg:hover {
+    background-color: var(--black);
+}
+
+.btn-login,
+.btn-contact {
+    background-color: transparent;
+    border: 2px solid var(--sec-color);
+    color: var(--sec-color);
+}
+
+.btn-contact {
+    background-color: transparent;
+    border: 2px solid var(--main-color);
+    color: var(--main-color);
+}
+
+.btn-contact:hover {
+    background-color: var(--main-color);
+    border: 2px solid var(--main-color);
+    color: var(--white);
+
+}
+
+
+.btn-login:hover {
+    background-color: var(--sec-color);
+    color: var(--white);
+    transition: 0.3s;
+}
+
+/* Carousel Styles */
+.carousel-item img {
+    height: 70%;
+    object-fit: cover;
+    width: 100%;
+}
+
+.carousel-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9));
+}
+
+
+
+/* Main Section Styles */
+.main {
+    position: absolute;
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.main .container {
+    padding: 2rem;
+}
+
+.main h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.main h3 {
+    font-size: 1rem;
+    margin-bottom: 3rem;
+    color: white;
+}
+
+
+
+@media only screen and (max-width:1000px) {
+    .main {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        text-align: center;
+    }
+
+    .main h1 {
+        font-size: 2rem;
+    }
+
+}
+
+@media only screen and (max-width:800px) {
+    .main {
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        text-align: center;
+    }
+
+    .main h1 {
+        font-size: 1.5rem;
+    }
+
+    .main h3 {
+        font-size: 0.7rem;
+        margin-bottom: 2rem;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .main {
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        text-align: center;
+    }
+
+    .main h1 {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+
+    .main h3 {
+        display: none;
+    }
+
+    .home-btn {
+        padding: .3rem 1rem;
+        font-size: .7rem;
+    }
+}
+
+.intro-left h2,
+.section-heading h2,
+.section-heading h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+p {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.intro-left button {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.about,
+.footer {
+    background-color: var(--sec-color);
+    color: var(--white);
+}
+
+.icon {
+    font-size: 1.5rem;
+    color: var(--main-color);
+}
+
+.credits {
+    background-color: var(--dark-grey);
+}
+
+/* jobs */
+.categories {
+    padding: 0 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 1rem;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.categories::-webkit-scrollbar {
+    display: none;
+}
+
+.category {
+    flex: 0 0 auto;
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: none;
+    margin: 8px 4px;
+    text-transform: capitalize;
+    color: var(--white);
+    background-color: var(--sec-color);
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.category.active{
+    background-color: var(--main-color);
+    transition: .3s;
+}
+
+.category:hover {
+    background-color: var(--black);
+    transition: .3s;
+}
+
+.about-content {
+    line-height: 1.6;
+}
+
+/* about Japan */
+
+.wrapper-outer {
+    height: 80vh;
+    overflow: hidden;
+}
+
+.wrapper {
+    height: 100%;
+    overflow-x: hidden;
+    perspective: 1;
+}
+
+.parallax_section {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    position: relative;
+    overflow: hidden;
+    transform-style: preserve-3d;
+}
+
+.parallax_bg {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url(./images/city1.webp);
+    height: 80vh;
+    width: 100%;
+    background-size: cover;
+    object-fit: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.parallax_section h2 {
+    color: var(--white);
+    margin: 0;
+    text-shadow: 2xp 2px 2px rgbs(0, 0, 0, 0.4);
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.about-jp-content p {
+    color: white;
+}
+
+@media only screen and (max-width:500px) {
+    .wrapper-outer {
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    .parallax_bg {
+        height: 100vh;
+    }
+    .parallax_section {
+        min-height: 100vh;
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+    
+    p{
+        font-size: 0.85rem;
+    }
+    
+}
+
+/* job listing */
+
+#job-cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 1rem;
+}
+
+.job-card {
+    min-width:400px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: .2rem .5rem;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+}
+
+.job-title {
+    font-size: 1.2rem;
+    padding: .6rem 2rem;
+    margin-bottom: .9rem;
+    color: var(--main-color);
+    background-color: var(--sec-color);
+    font-weight: 600;
+    border-radius: 2rem;
+
+}
+
+.company-main{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+
+.company-logo{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: 4px solid var(--main-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.company-logo h1{
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 55px;
+    color: var(--sec-color);
+    margin-top: 10px;
+}
+
+.details{
+    flex-grow: 1;
+}
+.job-company {
+    color: var(--black);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.job-location {
+    color: var(--dark-grey);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.work{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: .7rem;
+    margin: 1rem 0;
+}
+
+.work div{
+    background-color: var(--light-grey);
+    color: black;
+    padding: .4rem 1rem;
+    border-radius: 5px;
+    font-size: 0.8rem;
+}
+
+.job-salary {
+    color: #666;
+}
+
+.job-date {
+    color: #666;
+}
+
+.job-skills {
+    vertical-align: middle;
+    height: 50px;
+    color: var(--sec-color);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.job-skills span{
+    color: var(--black);
+}
+
+
+.page-item li {
+    color: var(--sec-color);
+}
+
+.last{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: .7rem;
+    margin: 1rem 0;
+}
